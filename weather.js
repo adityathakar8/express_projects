@@ -26,8 +26,8 @@ app.post("/", function(req, res) {
       const imgUrl = "https://openweathermap.org/img/wn/" + icon + "@2x.png";
 
 
-      res.write("<h1 style='background-color:#DDDDDD; text-align:center; font-size:500%;'>The temperature in "+cityName +" is " + weather + " degree celcius.</h1>");
-      res.write("<h2 style='background-color:#DDDDDD; text-align:center; font-size:300%;'>The weather is currently '" + weatherDescription + "'.</h2>")
+      res.write("<h1 style='background-color:#DDDDDD; text-align:center; font-size:500%;'>The temperature in " + cityName + " is " + weather + " degree celcius.</h1>");
+      res.write("<h2 style='background-color:#DDDDDD; text-align:center; font-size:300%;'>The weather is currently '" + weatherDescription + "'.</h2>");
       res.write("<img style='widht:300px; height:300px; position:absolute; left: 610px; top:300px;' src=" + imgUrl + "></img>");
       res.send();
 
@@ -40,6 +40,6 @@ app.post("/", function(req, res) {
 
 
 
-app.listen(process.env.POST||3000, function() {
+app.listen(process.env.PORT || 3000, function() {
   console.log("the server is up running on server 3000");
 });
