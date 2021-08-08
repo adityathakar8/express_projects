@@ -28,7 +28,7 @@ app.post("/", function(req, res) {
 
       res.write("<h1 style='background-color:#DDDDDD; text-align:center; font-size:500%;'>The temperature in " + cityName + " is " + weather + " degree celcius.</h1>");
       res.write("<h2 style='background-color:#DDDDDD; text-align:center; font-size:300%;'>The weather is currently '" + weatherDescription + "'.</h2>");
-      res.write("<img style='widht:300px; height:300px; position:absolute; left: 40%; top:50%;' src=" + imgUrl + "></img>");
+      res.write("<img style='widht:450px; height:450px; position:absolute; left: 35%; top:50%;' src=" + imgUrl + "></img>");
       res.send();
 
     });
