@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="weather-forecast.png">
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <title>WeatherWizard</title>
+    <style>
+
+
+      body{
+        background-color: #E8F6EF;
+      }
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+  </head>
+  <body class="text-center">
+
+<main class="form-signin">
+  <div class="main-man">
+
+
+  <form action="/" method="post" id="formedit">
+    <img class="mb-4" id="img1"src="weather-forecast.png" alt="" width="72" height="57">
+    <h1 class="h3 mb-3 fw-normal">WeatherWizard says..</h1>
+    <br>
+    <h3><%=weather_title%></h3>
+    <br>
+    <h2><%=weather_des%></h2>
+    <img src=<%=weather_img%> alt="">
+
+
+
+
+
+
+
+    <p class="mt-5 mb-3 text-muted">@WeatherWizard</p>
+  </form>
+  </div>
+</main>
+
+
+
+  </body>
+
+</html>
